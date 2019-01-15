@@ -1,0 +1,37 @@
+{
+  "name": "Google-Book-Search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+
+  "engines": {
+    "node": "10.11.0",
+    "yarn": "1.12.3"
+    
+    },
+
+ "scripts": {
+
+    "start": "node server.js",
+ 
+   "client": "cd client && yarn start",
+   "seed": "node scripts/seed.js",
+   "install": "cd client && yarn install",
+   "build": "cd client && npm run build",
+   "heroku-postbuild": "yarn build"
+ 
+  },
+
+
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.7",
+    "morgan": "^1.9.0",
+    "react-router-dom": "^4.3.1"
+  }
+  
+  
+   }
+
+
