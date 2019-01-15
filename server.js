@@ -41,6 +41,9 @@ mongoose.Promise = global.Promise; // Set up promises with mongoose
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/article");
 
+
+
+
 // Send every other request to the React app
 // Define any API routes before this runs
 // app.get("*", (req, res) => {
